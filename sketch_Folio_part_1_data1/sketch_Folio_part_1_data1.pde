@@ -24,13 +24,13 @@ for (TableRow row : data.rows()) {
 
 mean=count/RowCount;
 
-println(mean);
+
 
    count=0;
    count1=0;
    n=0;
    
-    for(i=0;i<40;i++){
+    for(i=0;i<RowCount;i++){
 
 for (TableRow row : data.rows()) {
     
