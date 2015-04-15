@@ -2,7 +2,7 @@ Table data;
 
 size(600,600);
 background(255);
-  data = loadTable("part1data.csv","header");
+  data = loadTable("part2math.csv","header");
   int RowCount=data.getRowCount();
   println( RowCount+ " total rows in table");
    for (TableRow row : data.rows()) {
