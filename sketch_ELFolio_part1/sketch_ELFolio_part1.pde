@@ -1,8 +1,8 @@
 void setup(){
-  size(1200,700);
+  size(800,600);
 }
-float x = 1200;
-float y = 700;
+float x = 800;
+float y = 600;
 int mycolour = 0;
 void draw(){
   background(mycolour);
