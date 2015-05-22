@@ -1,8 +1,8 @@
 void setup(){
-  size(800,600);
+  size(1200,700);
 }
-float x = 2;
-float y = 2;
+float x = 1200;
+float y = 700;
 int mycolour = 0;
 void draw(){
   background(mycolour);
@@ -13,13 +13,13 @@ void draw(){
 void mousePressed(){
   if(mouseButton == LEFT){
     mycolour =0;
-  x=x*2;
-  y=y*2;
-  }
-  if(mouseButton == RIGHT){
-    mycolour =100;
   x=x/2;
   y=y/2;
   }
-println("length size ="+ x);
+  if(mouseButton == RIGHT){
+    mycolour =100;
+  x=x*2;
+  y=y*2;
+  }
+println("length size ="+" " + x +" "+ "pixels");
 }
