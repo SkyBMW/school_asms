@@ -22,4 +22,5 @@ void mousePressed(){
   y=y*2;
   }
 println("length size ="+" " + x +" "+ "pixels");
+println("width size ="+" " + y +" "+ "pixels");
 }
