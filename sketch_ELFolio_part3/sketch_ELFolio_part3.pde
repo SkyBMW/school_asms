@@ -1,11 +1,15 @@
 void setup(){
   size(800,600);
   background(0);
+     fill(255);
+    textSize(40);
+    text("Welcome to 'World of Baterias'",100,200,30);
 }
 float x=random(0,800);
 float y=random(0,600);
 int b = 1;
 int i;
+float t;
 
 void draw(){
   ellipse(x,y,10,10);
@@ -19,13 +23,15 @@ void mousePressed(){
       x = random(10,800);
       y = random(10,600);
       ellipse(x,y,10,10);
-    } 
+    }
+   if (mouseButton == RIGHT) {
+   
+    fill(0);  
+    stroke(0);
+    rect(0, 0, 799, 599);
+ 
+  
   }
   println("amount of baterias increasing ="+" "+b);
-  if(mouseButton == RIGHT){
-    fill(255);
-    textSize(72);
-
-    text("World of Baterias",30,200,30);
-  }
+}
 }
