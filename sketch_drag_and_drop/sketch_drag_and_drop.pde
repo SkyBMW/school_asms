@@ -13,7 +13,8 @@ void setup(){
   rectMode(CENTER);
 }
 void draw(){
-  if (mouseX > x-h && mouseX < x+h && mouseY > y-h && mouseY < y+h){
+  background(0);
+  if (mouseX > x-(h/2.0) && mouseX < x+(h/2.0) && mouseY > y-(h/2.0) && mouseY < y+(h/2.0)){
         cover=true;
         if(!lock){
           stroke(255);
@@ -29,7 +30,7 @@ rect(x,y,h,h);
 void mousePressed(){
   if(cover){
     lock = true;
-   fill(255,0,255); 
+   fill(0,200,255); 
   }else{
     lock=false;
   }
