@@ -3,9 +3,9 @@ int length = 500;
 float x=0;
 float x2;
 float y;
-float a=0.4;
-float b=-2;
-float c=-60;
+float a=-0.04; //use different symbol to write in other program
+float b=-5;    //use different symbol to write in other program
+float c=-5;    //use different symbol to write in other program
 float h;
 float k;
 float y3;
