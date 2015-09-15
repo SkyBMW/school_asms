@@ -7,11 +7,11 @@ void setup(){
 size(600,700);
 
 img = loadImage("Map1.png"); 
+  image(img,0,0);
 
 }
 
 void draw(){
-  image(img,0,0);
   translate(300,350);
     
   for(i=-600;i<=300;i++){ 
@@ -37,7 +37,16 @@ void draw(){
     ellipse(x1-300, y1-350, 3, 3);
     text("("+(x1-300)+", "+-(y1-350)+")",x1-300, (y1-10)-350);
   }
-
+  
+  if (pointset >= 2){
+    ellipse(x2-300, y2-350, 3, 3);
+    text("("+(x2-300)+", "+-(y2-350)+")",x2-300, (y2-10)-350);
+  }
+ 
+  if (pointset >= 3){
+    ellipse(x3-300, y3-350, 3, 3);
+    text("("+(x3-300)+", "+-(y3-350)+")",x3-300, (y3-10)-350);
+  }
  
 }
 
